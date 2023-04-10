@@ -25,6 +25,7 @@ class SiteController {
   async show_music_trangchu(req, res, next) {
     try {
       let music = [];
+
       if (req.query.name) {
         music = await Music.findAll({
           where: {
@@ -41,9 +42,11 @@ class SiteController {
           raw: true
         });
       }
+      console.log("TEST :" + req.session.name);
       res.render('TrangChu', {
         layout: 'TrangChu',
-        music
+        music,
+        name: req.session.name || "Account"
       });
     } catch (err) {
       console.log('Error executing query: ', err);

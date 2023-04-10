@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'user_music'
+  database: 'music_database'
 });
 
 function connect() {

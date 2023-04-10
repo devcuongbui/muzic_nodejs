@@ -72,24 +72,32 @@
             {{!--
         </form> --}}
 
-        <h2>TrangTheoDoi Table</h2>
+        <h2>TrangTop100 Table</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>id_bg</th>
+                    <th>id</th>
+                    <th>title</th>
                     <th>bg</th>
-                    <th>remove</th>
+                    <th>des</th>
+                    <th>des1</th>
+                    <th>des2</th>
+                    <th>edit</th>
                 </tr>
             </thead>
             <tbody id="userTableBody">
-                {{#each trangtheodoi}}
+                {{#each top100card}}
                 <tr>
                     <td>{{this.id}}</td>
+                    <td>{{this.title}}</td>
                     <td>{{this.bg}}</td>
+                    <td>{{this.des}}</td>
+                    <td>{{this.des1}}</td>
+                    <td>{{this.des2}}</td>
                     <td>
                         <form action="/admin/trangtheodoi/{{this.id}}/delete?_method=DELETE" method="POST">
                             <input type="hidden" name="_method" value="DELETE">
-                            <button class="btn btn-danger" type="submit">Remove</button>
+                            <button class="btn btn-primary" type="submit">Edit</button>
                         </form>
                     </td>
                 </tr>

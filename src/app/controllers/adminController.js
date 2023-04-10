@@ -4,6 +4,8 @@ const Music = require('../models/music');
 const Historyplay = require('../models/historyplay');
 const Musiccategory = require('../models/musiccategory');
 const Musicalgenres = require('../models/musicalgenres');
+const Top100genres = require('../models/top100genres');
+const Top100card = require('../models/top100card');
 const Musiccard = require('../models/musiccard');
 const Composer = require('../models/composer');
 const Musiccomposer = require('../models/musiccomposer');
@@ -133,7 +135,7 @@ class adminController {
         raw: true
       });
       res.render('admin_trangtheodoi', {
-        layout: 'admin',
+        layout: 'admin_trangtheodoi',
         trangtheodoi
       });
     } catch (err) {
@@ -149,7 +151,7 @@ class adminController {
         raw: true
       });
       res.render('admin_trangtheloai', {
-        layout: 'admin',
+        layout: 'admin_trangtheloai',
         musiccard
       });
     } catch (err) {
@@ -159,19 +161,20 @@ class adminController {
   }
   async show_trangtop100(req, res, next) {
     try {
-      const musiccard = await Musiccard.findAll({
-        attributes: ['id', 'bg', 'title', 'des', 'id_genre', 'des1', 'des2'],
+      const top100card = await Top100card.findAll({
+        attributes: ['id', 'title', 'bg', 'des', 'des1', 'des2', 'id_top100genre'],
         raw: true
       });
       res.render('admin_trangtop100', {
-        layout: 'admin',
-        musiccard
+        layout: 'admin_trangtop100',
+        top100card
       });
     } catch (err) {
       console.log('Error executing query: ', err);
       next(err);
     }
   }
+
   async show_music(req, res, next) {
     try {
       let music = [];
