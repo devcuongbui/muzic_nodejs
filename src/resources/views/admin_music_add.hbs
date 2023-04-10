@@ -1,0 +1,40 @@
+<div class="upload mx-auto">
+    <div class="upload-wrap">
+        <h3>Upload Music</h3>
+        <form action="/admin/music/add" method="POST">
+            <div class="form-group" style="display: none;">
+                <input type="text" class="form-style" placeholder="poster" name="poster" value="1" readonly>
+                <i class="input-icon uil uil-user"></i>
+            </div>
+            <div class="form-group mt-2">
+                <input type="text" class="form-style" placeholder="singer" name="singer_name" required>
+                <i class="input-icon uil uil-phone"></i>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-style" placeholder="name" name="name" required>
+                <i class="input-icon uil uil-at"></i>
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-style" placeholder="date_add" name="date_add" required>
+                <i class="input-icon uil uil-lock-alt"></i>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-style" placeholder="duration" name="duration" required>
+                <i class="input-icon uil uil-at"></i>
+            </div>
+            <div class="form-group">
+                <label for="image" style="color: black;">Tải file ảnh:</label>
+                <input type="file" class="form-style" placeholder="image" name="image" id="image" required>
+                <i class="input-icon uil uil-lock-alt"></i>
+            </div>
+            <div class="form-group">
+                <label for="src" style="color: black;">Tải file nhạc:</label>
+                <input type="file" class="form-style" placeholder="src" name="src" id="src" required>
+                <i class="input-icon uil uil-lock-alt"></i>
+            </div>
+            <div class="register">
+                <button class="btn mt-4" type="submit">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

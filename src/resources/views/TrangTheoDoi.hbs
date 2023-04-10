@@ -1,0 +1,1198 @@
+<div class="root">
+    <div class="row no-gutters">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <!-- logo -->
+            <div class="sidebar__logo">
+            </div>
+            <!-- nav -->
+            <ul class="sidebar__nav">
+                <li>
+                    <a href="../Trangchu">
+                        <i class="sidebar__icon far fa-play-circle"></i>
+                        <span>Cá Nhân</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Trangchu">
+                        <i class="sidebar__icon fas fa-compact-disc"></i>
+                        <span>khám Phá</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Trangchu">
+                        <i class="sidebar__icon fas fa-chart-line"></i>
+                        <span>#zingchart</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../TrangTheoDoi/index.html">
+                        <i class="sidebar__icon fa-regular fa-rectangle-list"></i>
+                        <span>Theo Dõi</span>
+                    </a>
+                </li>
+                <li class="underline"></li>
+                <li>
+                    <a href="../TrangTheLoai/index.html">
+                        <i class="sidebar__icon fab fa-buromobelexperte"></i>
+                        <span>Thể Loại</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../TrangTop100/index.html">
+                        <i class="sidebar__icon fas fa-star"></i>
+                        <span>Top 100</span>
+                    </a>
+                </li>
+                <!-- <li>
+              <a href="../TrangMV/index.html">
+                <i class="sidebar__icon fas fa-photo-video"></i>
+                <span>MV</span>
+              </a>
+            </li> -->
+            </ul>
+        </div>
+
+
+
+
+
+        <!-- main -->
+        <div class="main">
+            <div class="container">
+                <header class="header">
+                    <div class="container justify-content-between justify-content-end">
+                        <div class="header__search d-md-flex d-none">
+                            <div class="header__search-control">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="header__search-box d-md-flex d-none">
+                                <label for="header-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                                <input id="header-search" type="text"
+                                    placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." />
+                            </div>
+                        </div>
+                        <div class="header__user">
+                            <i class="fas fa-cog"></i>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <!-- content -->
+            <div class="content">
+                <div class="container">
+                    <!-- banner -->
+                    <div class="banner__img">
+                        <a href="#" alt="Banner" aria-label="Banner">
+                            <img src="/img/image_trangtheloai/banner_2.png" alt="" class="banner_img" />
+                        </a>
+                    </div>
+
+                    <!-- category -->
+                    <div class="category">
+
+                        <!-- Tâm trạng và hoạt động -->
+                        <div class="activity">
+                            <h2 class="activity__heading heading">Tâm trạng và hoạt động</h2>
+                            <div class="row">
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/dinner.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/dulich.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/yoga.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/tinhyeu.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/running.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/driving.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/motivation.png"
+                                                alt="" /></div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/workout.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!-- EDM -->
+                        <div class="edm">
+
+                            <h2 class="edm__heading heading">EDM</h2>
+                            <div class="row">
+                                {{#each musiccard}}
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/{{this.bg}}" alt="" />
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">{{this.title}}</div>
+                                            <p class="card__body-desc">
+                                                <a href="">{{this.des}}</a>
+                                                <a href="">{{this.des1}}</a>
+                                                <a href="">{{this.des2}}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{!-- <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/edm.png" alt="" />
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">EDM Now</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Alan Walker, </a>
+                                                <a href="">Lost Frequency, </a>
+                                                <a href="">twocolors...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> --}}
+                                {{/each}}
+                                {{!-- <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/edm_hits.png" alt="" />
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Today's EDM Hits</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Alan Walker, </a>
+                                                <a href="">Alesso, </a>
+                                                <a href="">R3hab...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/dance_rewind.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Dance Rewind</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Avicii, </a>
+                                                <a href="">The Chainsmokers, </a>
+                                                <a href="">Calvin Harris...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-lg-3 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/acoustic_edm.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Acoustic EDM</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Rita Ora, </a>
+                                                <a href="">Hasley, </a>
+                                                <a href="">Dermot Kennedy...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> --}}
+
+
+
+                            </div>
+
+                        </div>
+
+                        <!-- Trữ tình & Bolero -->
+                        <div class="bolero">
+                            <h2 class="bolero__heading heading">Trữ tình & Bolero</h2>
+                            <div class="row">
+
+                                <div class="col col-lg-2 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/bolero_hay.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Bolero Hay Nhất</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Phi Nhung, </a>
+                                                <a href="">Mạnh Quỳnh, </a>
+                                                <a href="">Như Quỳnh...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-2 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/bolero_trutinh.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Bolero Trữ Tình</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Hồng Phượng, </a>
+                                                <a href="">Minh Luân, </a>
+                                                <a href="">Khưu Huy Vũ...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-2 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/best_bolero.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">The Best Of Bolero</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Chế Linh, </a>
+                                                <a href="">Sơn Tuyền, </a>
+                                                <a href="">Giao Linh...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-2 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/nhac_que_huong.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Nhạc Quê Hương</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Tố My, </a>
+                                                <a href="">Khưu Huy Vũ, </a>
+                                                <a href="">Lưu Ánh Loan...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-2 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/bolero_ngoisaotre.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Bolero Ngôi Sao Trẻ</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Quỳnh Loan, </a>
+                                                <a href="">Dương Nghi Đình, </a>
+                                                <a href="">Ngọc Phụng...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-lg-2 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card__img"><img src="/img/image_trangtheloai/song_ca_bolero.png"
+                                                alt="" /></div>
+                                        <div class="card__body">
+                                            <div class="card__body-title">Song Ca Bolero</div>
+                                            <p class="card__body-desc">
+                                                <a href="">Giao Linh, </a>
+                                                <a href="">Ân Thiên Vỹ, </a>
+                                                <a href="">Ngọc Hân...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Remix -->
+                            <div class="remix">
+                                <div class="remix__heading heading">Remix</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/beast_mode_hiphop.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Beast Mode Hip Hop</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Travis Scott, </a>
+                                                    <a href="">Eminem, </a>
+                                                    <a href="">DaBaby...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/trap_hits.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Trap Hits</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Migos, </a>
+                                                    <a href="">Lil Nas X, </a>
+                                                    <a href="">21 Savage...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/hiphop_sampling.png" alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Hip-Hop Samplings</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Drake, </a>
+                                                    <a href="">Tyga, </a>
+                                                    <a href="">Playboi Carti...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/hiphop_twelve_carat.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Twelve Carat Toothace</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Post Malone</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/90s_hiphop.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">90s Hip-Hop</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">2Pac, </a>
+                                                    <a href="">Lauryn Hill, </a>
+                                                    <a href="">Jay-Z...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/drake.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Honestly, Never Mind</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Drake</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- R&B -->
+                            <div class="r_b">
+                                <div class="r_b__heading heading">R&B</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/are&be.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Are & Be</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Beyoncé, </a>
+                                                    <a href="">SZA, </a>
+                                                    <a href="">Babyface...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/slow_jamz.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Slow Jamz</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Kehlani, </a>
+                                                    <a href="">keshi, </a>
+                                                    <a href="">H.E.R...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/ne_yo.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Self Explanatory</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Ne-Yo</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/dinhcao_r&b.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Đỉnh Cao R&B</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Alicia Keys, </a>
+                                                    <a href="">Usher, </a>
+                                                    <a href="">Chris Brown...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/alternative_r&b.png" alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Alternative R&B</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Jorja Smith, </a>
+                                                    <a href="">Lucky Daye, </a>
+                                                    <a href="">Fousheé...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!--Nhạc phim-->
+                            <div class="ost">
+                                <div class="ost__heading heading">Nhạc Phim</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/nhac_phim_au_my.png" alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Hành Động Âu Mỹ</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Travis Scott, </a>
+                                                    <a href="">Billie Eilish, </a>
+                                                    <a href="">Rock...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/nhac_phim_viet_nam.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Nhạc Phim Việt Nam</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Phạm Mạnh Quỳnh, </a>
+                                                    <a href="">Đức Phúc...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/nhac_phim_em_va_trinh.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Em Và Trịnh</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Avin Lu, </a>
+                                                    <a href="">Bùi Lan Hương</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/nhac_phim_wednesday.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Nhạc Phim Wednesday</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Danny Elfman, </a>
+                                                    <a href="">Lady Gaga...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/nhac_phim_hq.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Nhạc Phim Hàn Quốc</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">SS501, </a>
+                                                    <a href="">IU...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!--Nhạc không lời-->
+                            <div class="instrumental_music">
+                                <div class="instrumental_music__heading heading">Nhạc Không Lời</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/hoa_tau.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Hòa Tấu Bolero</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Hải Phượng, </a>
+                                                    <a href="">Phương Thùy, </a>
+                                                    <a href="">Hòa Tấu...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/guitar_viet.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Guitar Việt</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Đình Phương, </a>
+                                                    <a href="">Võ Tá Hân, </a>
+                                                    <a href="">Trần Hoài Phương...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/nhac_khong_loi.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title" data-toggle="tooltip"
+                                                    data-placement="bottom" title="Nhạc không lời hay nhất">Nhạc không
+                                                    lời hay nhất</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Yanni, </a>
+                                                    <a href="">Richard Clayderman, </a>
+                                                    <a href="">Kenny G...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/trinh_cong_son.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title" data-toggle="tooltip"
+                                                    data-placement="bottom" title="Hòa Tấu Trịnh Công Sơn">Hòa Tấu Trịnh
+                                                    Công Sơn</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Mèo Ú Guitar, </a>
+                                                    <a href="">Trần Hoài Phương, </a>
+                                                    <a href="">Guitar Vĩnh Tâm...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/instrumental_today.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Instrumental Today</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Jim Brickman, </a>
+                                                    <a href="">The Piano Guys... </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!--Nhạc Việt Bất Hủ-->
+                            <div class="vpop">
+                                <div class="vpop__heading heading">Nhạc Việt Bất Hủ</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/mot_thoi_da_xa.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Một Thời Đã Xa</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Phương Thanh, </a>
+                                                    <a href="">Đan Trường, </a>
+                                                    <a href="">Lam Trường...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/sang_tac_bat_hu.png" alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Sáng Tác Bất Hủ</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Tuấn Ngọc, </a>
+                                                    <a href="">Vũ Khanh, </a>
+                                                    <a href="">Mỹ Linh...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/nhac_tre_huyen_thoai.png" alt="" />
+                                            </div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Nhạc Trẻ Huyển Thoại</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Đan Trường, </a>
+                                                    <a href="">Ưng Hoàng Phúc, </a>
+                                                    <a href="">Duy Mạnh...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/nhac_phap.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Nhạc Pháp Lời Việt</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Bằng Kiều, </a>
+                                                    <a href="">Tóc Tiên, </a>
+                                                    <a href="">Minh Tuyết...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Jazz -->
+                            <div class="jazz">
+                                <div class="jazz__heading heading">Jazz</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/super_blue.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">SuperBlue</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Kurt Elling, </a>
+                                                    <a href="">Charlie Hunter</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/jazz_pop.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Jazz Pop</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Norah Jones, </a>
+                                                    <a href="">Jamie Cullum, </a>
+                                                    <a href="">Diana Krall...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/jazz_today.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Jazz Today</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Caity Gyorgy, </a>
+                                                    <a href="">Adam Blackstone, </a>
+                                                    <a href="">FKJ...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/jazz_50.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Jazz 50: Zing Choice</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Frank Sinatra, </a>
+                                                    <a href="">Tony Bennett, </a>
+                                                    <a href="">Herbie Hancock...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/jazz_viet.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Jazz Việt</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Hồ Trung Dũng, </a>
+                                                    <a href="">Cheung, </a>
+                                                    <a href="">Nguyên Thảo...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Indie -->
+                            <div class="indie">
+                                <div class="indie__heading heading">Indie</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/indie_viet.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Indie Việt</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">buitruonglinh, </a>
+                                                    <a href="">Thịnh Suy, </a>
+                                                    <a href="">Chillies...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/quy_co_indie.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Qúy Cô Indie</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Nhạc Của Trang, </a>
+                                                    <a href="">Mỹ Anh, </a>
+                                                    <a href="">Vũ Thanh Vân...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/chuyen_xe_indie.png" alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Chuyến Xe Indie</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Vũ, </a>
+                                                    <a href="">Tùng, </a>
+                                                    <a href="">Trang...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-3 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/tan_man_indie.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Tản Mạn Cùng Indie Việt</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Starry Night, </a>
+                                                    <a href="">KoQuet, </a>
+                                                    <a href="">Cassette...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Latin -->
+                            <div class="latin">
+                                <div class="latin__heading heading">Latin</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/mis_manos.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Mis Manos</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Camilo</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/bailla_reggeaton.png" alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Bailla Reggaeton</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Rauw Alajandro, </a>
+                                                    <a href="">Karol G, </a>
+                                                    <a href="">Maluma...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/latin_workout.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Latin Workout</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Becky G, </a>
+                                                    <a href="">Rauw Alejandro, </a>
+                                                    <a href="">Ozuna...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/jbalvin.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Jose</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">J Balvin</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/women_latin.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Women Of Latin</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Becky G, </a>
+                                                    <a href="">Anitta, </a>
+                                                    <a href="">Karol G...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Acoustic -->
+                            <div class="acoustic">
+                                <div class="acoustic__heading heading">Acoustic</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/acoustic_now.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Acoustic Now</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Conan Gray, </a>
+                                                    <a href="">Olivia Rodrigo, </a>
+                                                    <a href="">Jeremy Zucker...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/kpop_acoustic.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Acoustic Relax</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Coffeeboy, </a>
+                                                    <a href="">Stella Jang, </a>
+                                                    <a href="">Chamsom...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/huong_mua_he.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Hương Mùa Hè</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Suni Hạ Linh, </a>
+                                                    <a href="">Hoàng Dũng, </a>
+                                                    <a href="">GREY D...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/vpop_acoustic.png"
+                                                    alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Acoustic Tình Ca</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Thanh Lam, </a>
+                                                    <a href="">Trần Thu Hà, </a>
+                                                    <a href="">Thanh Hà...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/acoustic_thuy_chi.png" alt=""></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Thong Dong</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Thùy Chi</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Rock -->
+                            <div class="rock">
+                                <div class="rock__heading heading">Rock</div>
+                                <div class="row">
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/10s_rock.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">2010s Pop Rock</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Imagine Dragons, </a>
+                                                    <a href="">Fall Out Boy, </a>
+                                                    <a href="">The 1975...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img
+                                                    src="/img/image_trangtheloai/rock_zingchoice.png" alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Rock 50: Zing Choice</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Nothing But Thieves, </a>
+                                                    <a href="">Metanoia, </a>
+                                                    <a href="">Linkin Park...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/rock_chicks.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Rock Chicks</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Avril Lavigne, </a>
+                                                    <a href="">Olivia Rodrigo, </a>
+                                                    <a href="">Leah Kate...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/simple_plan.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Harder than It Looks</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Simple Plan</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/rock_scropions.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Rock Believer (Deluxe)</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Scropions</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-2 col-md-3 col-6">
+                                        <div class="card">
+                                            <div class="card__img"><img src="/img/image_trangtheloai/rock_me_up.png"
+                                                    alt="" /></div>
+                                            <div class="card__body">
+                                                <div class="card__body-title">Rock Me Up</div>
+                                                <p class="card__body-desc">
+                                                    <a href="">Maneskin, </a>
+                                                    <a href="">Valley, </a>
+                                                    <a href="">Yungblud...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!-- footer -->
+            <footer class="footer">
+            </footer>
+        </div>
+    </div>
+</div>

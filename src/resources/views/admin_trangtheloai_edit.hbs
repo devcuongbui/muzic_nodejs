@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Edit TrangTheLoai</div>
+
+                <div class="card-body">
+                    <form action="/admin/trangtheloai/{{ musiccard.id }}?_method=PUT" method="POST">
+                        <div class="form-group row">
+                            <label for="image" style="color: black;">Tải file ảnh:</label>
+                            <input type="file" class="form-style" value="{{ musiccard.bg }}" placeholder="background"
+                                name="bg" id="bg" required>
+                            <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="title" class="col-md-4 col-form-label text-md-right">Title:</label>
+                            <div class="col-md-6">
+                                <input type="text" id="title" name="title" value="{{ musiccard.title }}"
+                                    class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="des" class="col-md-4 col-form-label text-md-right">Des:</label>
+                            <div class="col-md-6">
+                                <input type="text" id="des" name="des" value="{{musiccard.des}}" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="des1" class="col-md-4 col-form-label text-md-right">Des1:</label>
+                            <div class="col-md-6">
+                                <input type="text" id="des1" name="des1" value="{{musiccard.des1}}" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="des2" class="col-md-4 col-form-label text-md-right">Des2:</label>
+                            <div class="col-md-6">
+                                <input type="text" id="des2" name="des2" value="{{musiccard.des2}}" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

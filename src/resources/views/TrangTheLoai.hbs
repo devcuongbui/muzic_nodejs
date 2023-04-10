@@ -1,0 +1,531 @@
+<div class="root">
+  <div class="row no-gutters">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <!-- logo -->
+      <div class="sidebar__logo">
+        <a href="./index.html">
+        </a>
+      </div>
+      <!-- nav -->
+      <ul class="sidebar__nav">
+        <li>
+          <a href="../Trangchu">
+            <i class="sidebar__icon far fa-play-circle"></i>
+            <span>Cá Nhân</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Trangchu">
+            <i class="sidebar__icon fas fa-compact-disc"></i>
+            <span>khám Phá</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Trangchu">
+            <i class="sidebar__icon fas fa-chart-line"></i>
+            <span>#zingchart</span>
+          </a>
+        </li>
+        <li>
+          <a href="../TrangTheoDoi/index.html">
+            <i class="sidebar__icon fa-regular fa-rectangle-list"></i>
+            <span>Theo Dõi</span>
+          </a>
+        </li>
+        <li class="underline"></li>
+        <li>
+          <a href="../TrangTheLoai/index.html">
+            <i class="sidebar__icon fab fa-buromobelexperte"></i>
+            <span>Thể Loại</span>
+          </a>
+        </li>
+        <li>
+          <a href="../TrangTop100/index.html">
+            <i class="sidebar__icon fas fa-star"></i>
+            <span>Top 100</span>
+          </a>
+        </li>
+        <!-- <li>
+              <a href="../TrangMV/index.html">
+                <i class="sidebar__icon fas fa-photo-video"></i>
+                <span>MV</span>
+              </a>
+            </li> -->
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <header class="header">
+        <div class="container justify-content-between justify-content-end">
+          <div class="header__search d-md-flex d-none">
+            <div class="header__search-control">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="header__search-box d-md-flex d-none">
+              <label for="header-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+              <input id="header-search" type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." />
+            </div>
+          </div>
+          <div class="header__user">
+
+            <div class="header__icon">
+              <i class=" fas fa-cog"></i>
+            </div>
+            <div class="header__icon">
+              <i class=" fa-solid fa-user"></i>
+            </div>
+
+            <ul class="header__user-list">
+              <li class="header__user-item"><a href="./assets/pages/login/index.html">Log In</a></li>
+              <li class="header__user-item"><a href="./assets/pages/signin/index.html">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- ----------------------------- content: -------------------------->
+    <div class="content">
+      <div class="artist-navbar">
+        <nav class="artist-navbar-wrap">
+          <div class="artist-navbar-container">
+            <ul class="artist-navbar-menu">
+              <li class="artist-navbar-item is-active">
+                <div class="artist-navbar-link">
+                  <a href="#a">Việt Nam</a>
+                </div>
+              </li>
+              <li class="artist-navbar-item">
+                <div class="artist-navbar-link">
+                  <a href="#a">US-UK</a>
+                </div>
+              </li>
+              <li class="artist-navbar-item">
+                <div class="artist-navbar-link">
+                  <a href="#a">K-POP</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- carousel and zing choice -->
+      <div>
+        <div class="carousel">
+          <div class="container">
+            <div class="carousel__list">
+              <div class="zm-choice">
+                <h2 class="title">Best Choice Award Of MP3</h2>
+              </div>
+              <div class="row">
+                {{#each trangtheodoi}}
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/{{this.bg}}" alt="Background {{this.bg}}" />
+                </div>
+                {{/each}}
+              </div>
+              {{!-- <div class="row">
+
+
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/chi-dan.png" alt="Ca Sĩ Chi Dân" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/duc-phuc.png" alt="Ca Sĩ Đức Phúc" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/erik.png" alt="Ca Sĩ Erik" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/hoa-minzy.png" alt="Ca Sĩ Hoà Minzy" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/huong-ly.png" alt="Ca Sĩ Hương Ly" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/jack.png" alt="Ca Sĩ Jack" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/justatee.png" alt="Ca Sĩ Justatee" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/karik.png" alt="Ca Sĩ Karik" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/mr-siro.png" alt="Ca Sĩ Mr Siro" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/onlyc.png" alt="Ca Sĩ Only C" />
+                </div>
+                <div class="carousel__item">
+                  <img src="/img/image_trangtheodoi/trinh-thanh-binh.png" alt="Ca Sĩ Trịnh Thăng Bình" />
+                </div>
+              </div> --}}
+            </div>
+          </div>
+        </div>
+        <!-- end carousel and zing choice-->
+      </div>
+    </div>
+    <!-- ------------------------ news -------------------- -->
+    <div class="news">
+      <div class="container">
+        <div class="heading">
+          <h3 class="heading_news">Tâm Trạng Và Hoạt Động</h3>
+          <p class="heading_news_feel">Hôm nay có tin tức gì ?</p>
+        </div>
+      </div>
+      <!-- ------------------------------------- bảng tin --------------------------- -->
+      <div class="grid">
+        <div class="grid-item">
+          <div class="zm-card-01">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/ns-son-thach.jpg" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">S.T Sơn Thạch</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">16 tháng 11 lúc 14:14</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="status">Được ngày nghỉ, mà cũng ko nghỉ💪🏻💪🏻💪🏻💪🏻💪🏻</div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img1.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">156</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-02">
+          <div class="zm-card-02">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/nhu-hexi.webp" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Như Hexi</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">16 tháng 11 lúc 14:14</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                Vẻ đẹp không nằm trên gò má của người thiếu nữ Mà nó nằm trong ánh mắt của kẻ si tình ♥️
+              </div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img2.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">328</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-03">
+          <div class="zm-card-03">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/ung-dai-ve.webp" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Ưng Đại Vệ</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">16 tháng 11 lúc 14:13</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                1 đôi chân phải bước qua bao nhiêu ngã ba đường ? Và mỗi lần sẽ là 1 trải nghiệm vui hay là buồn ?
+              </div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img3.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">207</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-04">
+          <div class="zm-card-04">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/hoa-minzy-1.png" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Hoà Minzy</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">2 tháng 12 lúc 19:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">Ngủ ngon nhé 💕</div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img5.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">1,032</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">145</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-05">
+          <div class="zm-card-05">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/duc-phuc-1.png" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Đức Phúc</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">6 tháng 9 lúc 19:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">I just need you and some sunsets 💌</div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img6.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">1,285</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">545</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-06">
+          <div class="zm-card-06">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/erik-1.png" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Erik</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">21 tháng 5 lúc 13:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">Your groom 🤵🏻✨</div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img7.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">2,285</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">521</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-07">
+          <div class="zm-card-07">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/dalab.png" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">DALAB</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">2 ngày trước lúc 13:00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                Nếu đã mang trong mình bản chất của một quý ông thì bạn mặc gì cũng toát lên phong thái của một quý
+                ông, còn nếu đã không có trong mình bản chất quý xtộc thì
+              </div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img8.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">500</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-08">
+          <div class="zm-card-08">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/tay-nguyen-sound.png" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Tây Nguyên Sound</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">1 tháng 12 lúc 9:30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">Cảm ơn #TNS4LIFE gất nhìuuuuu</div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/img9.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">1,500</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">120</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-09">
+          <div class="zm-card-09">
+            <div class="card-header">
+              <div class="media">
+                <div class="media-left">
+                  <img src="/img/image_trangtheodoi/img10.png" alt="" />
+                </div>
+                <div class="media-content">
+                  <div class="singer-name">
+                    <p class="singer">Vũ</p>
+                    <span class="infor"> • </span>
+                    <p class="infor1">Quan Tâm</p>
+                  </div>
+                  <div class="datetime">
+                    <p class="timer">9 tháng 9 lúc 9:30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                Đôi khi ta bỏ ngỏ Những vụng dại thanh xuân Để khiến những bước chân Vụng về trên lối cũ.
+              </div>
+            </div>
+            <div class="card-content">
+              <img src="/img/image_trangtheodoi/vu.png" alt="" />
+            </div>
+            <div class="like-comment">
+              <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <p class="number">1,000</p>
+              </div>
+              <div class="comment">
+                <i class="fa-regular fa-comment"></i>
+                <p class="number">350</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------- end bảng tin ------------------ -->
+    <!-- contact -->
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact__form col-lg-6 col-12">
+            <h3 class="contact__form-title">Vote for Zing Choice 2022</h3>
+            <p class="contact__form-decs">About yourself?</p>
+            <div class="row">
+              <div class="col-12 col-md-6"><input type="text" placeholder="Name" /></div>
+              <div class="col-12 col-md-6"><input type="email" placeholder="Email" /></div>
+              <div class="col-12"><textarea placeholder="Name of your favourite singer"></textarea></div>
+            </div>
+            <button type="button">VOTE FOR YOUR FAVOURITE SINGER</button>
+          </div>
+          <div class="thumbnail col-6 d-lg-block d-none">
+            <img src="/img/image_trangtheodoi/zing-choice.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+  </div>
+</div>

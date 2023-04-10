@@ -1,0 +1,22 @@
+<div class="login mx-auto">
+  <div class="login-wrap">
+    <h3>Log In</h3>
+    <form action="/pagelogin/login" method="POST">
+      <div class="form-group">
+        <input type="email" class="form-style email" placeholder="email" name="email" required>
+        <i class="input-icon uil uil-at"></i>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-style pwd" placeholder="password" name="password" required>
+        <i class="input-icon uil uil-lock-alt"></i>
+      </div>
+      <div class="login-btn">
+        <button class="btn" type="submit">Login</button>
+      </div>
+      <div class="already">
+        <a href="../signin/" class="btn-alredy">You don't have an account ? Sign In</a>
+      </div>
+      <div class="aler">{{errorMessage}}</div>
+    </form>
+  </div>
+</div>
